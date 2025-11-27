@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - National Freedom Pentecostal Church</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+    <style>
+        /* Custom Styles */
+        .section-title {
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #0056b3;
+        }
+
+        .hero-section {
+            background: url('images/churchAudience.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            background-size: cover;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 1rem 0;
+            list-style: none;
+            border-left: 2px solid #0056b3;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -7px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #0056b3;
+            border: 2px solid #fff;
+        }
+
+        .timeline-item-content {
+            position: relative;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 2rem;
+            transition: transform 0.3s;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .team-member h4 {
+            margin: 0.5rem 0;
+            font-size: 1.25rem;
+            color: #0056b3;
+        }
+
+        .team-member p {
+            color: #555;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .card-deck {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .card {
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/churchLogo.jpg" alt="Church Logo">
+                NFP Church
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sermons.html">Sermons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ministries.html">Ministries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="give.html">Give</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 data-aos="fade-up">Welcome to National Freedom Pentecostal Church</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Join us in our mission to spread love, faith, and hope to our
+                community and beyond.</p>
+        </div>
+    </section>
+
+    <!-- About Us Page -->
+    <main class="container mt-5 pt-5">
+        <!-- Our Vision & Mission -->
+        <section data-aos="fade-up">
+            <h2 class="section-title">Our Vision & Mission</h2>
+            <p>At National Freedom Pentecostal Church, our vision is to spread the word of God and serve our community
+                with compassion and integrity. Our mission is to inspire and empower individuals to live a life that
+                reflects Christ’s love and teachings. We believe in fostering a supportive and inclusive environment
+                where everyone can grow spiritually and make a positive impact in their communities.</p>
+        </section>
+
+        <!-- History -->
+        <section data-aos="fade-up" data-aos-delay="200">
+            <h2 class="section-title">History</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4>Founding Year</h4>
+                        <p>National Freedom Pentecostal Church was founded in 1990 with a commitment to serving the
+                            local community through worship and outreach programs. The initial congregation was small,
+                            but the mission to spread the gospel grew quickly.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4>Major Expansion</h4>
+                        <p>In 2005, the church expanded its facilities to accommodate growing numbers and added new
+                            ministries to better serve the community. This expansion included a new auditorium and
+                            additional classrooms for Bible studies and community events.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4>Community Outreach</h4>
+                        <p>Over the years, we have launched numerous community outreach programs, including food drives,
+                            youth mentorship initiatives, and support for local schools. Our commitment to community
+                            service is a cornerstone of our church’s mission.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4>Global Missions</h4>
+                        <p>In recent years, we have expanded our mission efforts globally, partnering with international
+                            organizations to support humanitarian projects and spread the message of Christ worldwide.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Leadership Team -->
+        <section data-aos="fade-up" data-aos-delay="400">
+            <h2 class="section-title">Leadership Team</h2>
+            <div class="row">
+                <div class="col-md-4 team-member">
+                    <img src="images/church.jpg" alt="Pastor John Doe">
+                    <h4>Pastor John Doe</h4>
+                    <p>Senior Pastor</p>
+                    <p>Pastor John Doe has been leading our church with wisdom and compassion since 2005. His vision and
+                        dedication have greatly contributed to the growth and success of our church.</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="images/pastor2.jpg" alt="Pastor Jane Smith">
+                    <h4>Pastor Jane Smith</h4>
+                    <p>Associate Pastor</p>
+                    <p>Pastor Jane Smith brings a wealth of experience in pastoral care and community outreach. She has
+                        been instrumental in developing our support programs and fostering spiritual growth.</p>
+                </div>
+                <div class="col-md-4 team-member">
+                    <img src="images/pastor3.jpg" alt="Pastor Michael Johnson">
+                    <h4>Pastor Michael Johnson</h4>
+                    <p>Youth Pastor</p>
+                    <p>Pastor Michael Johnson is dedicated to nurturing the next generation through engaging youth
+                        programs
+                        and activities. His passion for youth ministry has made a significant impact on our young
+                        members.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Faith -->
+        <section data-aos="fade-up" data-aos-delay="600">
+            <h2 class="section-title">Our Faith</h2>
+            <p>We believe in the fundamental teachings of Christianity and uphold the values of faith, hope, and love.
+                Our
+                church is committed to living out the teachings of Jesus Christ and promoting a life of service and
+                compassion. Here are some key aspects of our faith:</p>
+            <div class="card-deck">
+                <div class="card" data-aos="fade-up">
+                    <div class="card-body">
+                        <h5 class="card-title">Scripture</h5>
+                        <p class="card-text">We hold the Bible as the inspired word of God and the foundation of our
+                            beliefs and practices. It guides our faith and teaches us how to live a Christ-centered
+                            life.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Love</h5>
+                        <p class="card-text">We believe in loving our neighbors as ourselves, showing compassion, and
+                            serving others with kindness. Love is at the heart of our mission and interactions.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-body">
+                        <h5 class="card-title">Prayer</h5>
+                        <p class="card-text">Prayer is a vital part of our spiritual life, connecting us with God and
+                            seeking His guidance. We encourage prayer as a means to strengthen our faith and resolve.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-body">
+                        <h5 class="card-title">Community</h5>
+                        <p class="card-text">We value building a supportive and inclusive community where everyone can
+                            grow
+                            spiritually and make a positive impact. Our church is a place of fellowship and mutual
+                            support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="me-2"><i class="bi bi-facebook" style="font-size: 24px;"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-twitter" style="font-size: 24px;"></i></a>
+                    <a href="#"><i class="bi bi-instagram" style="font-size: 24px;"></i></a>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: contact@nfpchurch.org</p>
+                    <p>Phone: +1 234 567 890</p>
+                    <p>Address: 123 Church Lane, City, Country</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 National Freedom Pentecostal Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministries Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+    <style>
+        /* Color scheme */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar customization */
+        .navbar-custom {
+            background-color: #003366;
+        }
+
+        .navbar-custom .nav-link,
+        .navbar-custom .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #ff0000;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        /* Ministries Section */
+        .ministry-section {
+            padding: 4rem 0;
+        }
+
+        .ministry-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .ministry-image {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .ministry-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .ministry-content {
+            flex: 1;
+            padding: 0 2rem;
+        }
+
+        .ministry-content h3 {
+            margin-bottom: 1rem;
+        }
+
+        .ministry-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .join-btn {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .join-btn:hover {
+            background-color: #d40000;
+            color: #fff;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/churchLogo.jpg" alt="Church Logo">
+                NFP Church
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sermons.html">Sermons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ministries.html">Ministries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="give.html">Give</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ministries Section -->
+    <section class="ministry-section container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2>Our Ministries</h2>
+            <p>Explore the various ministries you can join or support in our church.</p>
+        </div>
+
+        <!-- Ministry 1 -->
+        <div class="ministry-item row" data-aos="fade-right">
+            <div class="ministry-image col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Worship Ministry">
+            </div>
+            <div class="ministry-content col-md-6">
+                <h3>Worship Ministry</h3>
+                <p>Join our worship team and be part of an amazing group of individuals who lead the church in praise
+                    and worship. Open to musicians, singers, and sound engineers.</p>
+                <a href="#" class="join-btn">Join Us</a>
+            </div>
+        </div>
+
+        <!-- Ministry 2 -->
+        <div class="ministry-item row" data-aos="fade-left">
+            <div class="ministry-image col-md-6 order-md-2">
+                <img src="https://via.placeholder.com/500x300" alt="Children's Ministry">
+            </div>
+            <div class="ministry-content col-md-6 order-md-1">
+                <h3>Children's Ministry</h3>
+                <p>Help nurture the faith of our youngest members through teaching, activities, and care. Our Children's
+                    Ministry is always looking for compassionate volunteers.</p>
+                <a href="#" class="join-btn">Get Involved</a>
+            </div>
+        </div>
+
+        <!-- Ministry 3 -->
+        <div class="ministry-item row" data-aos="fade-right">
+            <div class="ministry-image col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Outreach Ministry">
+            </div>
+            <div class="ministry-content col-md-6">
+                <h3>Outreach Ministry</h3>
+                <p>Be the hands and feet of Christ by joining our Outreach Ministry. We work to meet the physical and
+                    spiritual needs of our community through various services.</p>
+                <a href="#" class="join-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="me-2"><i class="bi bi-facebook" style="font-size: 24px;"></i></a>
+                    <a href="#" class="me-2"><i class="bi bi-twitter" style="font-size: 24px;"></i></a>
+                    <a href="#"><i class="bi bi-instagram" style="font-size: 24px;"></i></a>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: contact@nfpchurch.org</p>
+                    <p>Phone: +1 234 567 890</p>
+                    <p>Address: 123 Church Lane, City, Country</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 National Freedom Pentecostal Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 1000, // Animation duration in ms
+            once: true      // Whether animation should happen only once
+        });
+    </script>
+</body>
+
+</html>
